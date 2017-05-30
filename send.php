@@ -1,6 +1,8 @@
 <?php
-if(isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['email']) && isset($_POST['message'])) {
-	//require("class.phpmailer.php"); //you have to download this plugin from github.com - link is in documentation
+
+if(isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['email']) && isset($_POST['message'])){
+
+	require 'vendor\phpmailer\phpmailer\class.phpmailer.php'; 
 	
 	$firstname = 	$_POST['firstname'];
 	$lastname = 	$_POST['lastname'];
