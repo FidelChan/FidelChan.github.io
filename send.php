@@ -1,8 +1,9 @@
 <?php
+require 'PHPMailer Autoload.php';
+$mail->isSMTP();
 
 if(isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['email']) && isset($_POST['message'])){
-
-	require 'vendor\phpmailer\phpmailer\class.phpmailer.php'; 
+	require("class.phpmailer.php"); 
 	
 	$firstname = 	$_POST['firstname'];
 	$lastname = 	$_POST['lastname'];
